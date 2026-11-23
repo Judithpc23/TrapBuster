@@ -53,6 +53,22 @@ Web prototype · public GitHub repository · technical report · error/AI-use do
 
 The MVP will not depend on scraping arbitrary Amazon or Google Maps URLs or obtaining complete reviewer histories from those services. Pasted review text will support text-only assessment; behavioral and hybrid assessment requires available, permitted historical data.
 
+## Dataset sources and storage
+
+The following five datasets have been downloaded for initial inspection and exploratory data analysis (EDA). Inclusion in the final experiments is subject to schema, label-provenance, metadata-availability, and licensing checks.
+
+**Google Drive (dataset storage):** [TrapBuster datasets folder](https://drive.google.com/drive/folders/1oEAx7Iw3aLtEmP27YmrEcFj58apokJDy?usp=sharing)
+
+| Local dataset name | Original source | Additional reference |
+| --- | --- | --- |
+| `op_spam_v1.4` | [Fake-review-detection (GitHub)](https://github.com/fredybotas/Fake-review-detection) | [Research paper — ACL Anthology](https://aclanthology.org/P11-1032) |
+| `yelp_dataset` | [Yelp Open Dataset](https://business.yelp.com/data/resources/open-dataset/) | — |
+| `fake-reviews-dataset.csv` | [Fake Reviews Dataset (Kaggle)](https://www.kaggle.com/datasets/mexwell/fake-reviews-dataset) | — |
+| `gmr-pl-fake-reviews-dataset` | [GMR-PL Fake Reviews Dataset (Kaggle)](https://www.kaggle.com/datasets/pawegryka/gmr-pl-fake-reviews-dataset) | — |
+| `modern-fake-reviews` | [Modern Fake Reviews (Hugging Face)](https://huggingface.co/datasets/Flowerly/modern-fake-reviews) | — |
+
+The raw files are stored externally in Google Drive rather than committed to this repository. Access to the Drive folder depends on its sharing settings. Dataset labels and behavioral metadata are **not assumed to be equivalent or available across sources**; these properties will be audited before model training.
+
 ## License and datasets
 
 A code license and dataset redistribution policy have **not yet been chosen**. Do not upload restricted, private or copyrighted datasets without confirming applicable permissions.
